@@ -1,0 +1,4 @@
+export const SET_LOADING_STATUS = 'SET_LOADING_STATUS'
+export const DEFINE_TITLE = 'DEFINE_TITLE'
+export const SET_IMG_HOST = 'SET_IMG_HOST'
+export const MALL_INFO = 'MALL_INFO'

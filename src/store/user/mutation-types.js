@@ -1,0 +1,3 @@
+export const SET_USER_INFO = 'SET_USER_INFO'
+export const LOGIN_ACCOUNT = 'LOGIN_ACCOUNT'
+export const CHANGE_ACCOUNT_PW = 'CHANGE_ACCOUNT_PW'

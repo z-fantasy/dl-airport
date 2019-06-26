@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="http://api.map.baidu.com/api?v=3.0&ak=LZ4IcvqDyNG0YKQajkVUfxzu6RGZiLGH"></script>
+    <link rel="icon" href="<%= BASE_URL %>static/favicon.ico">
+    <script src="<%= BASE_URL %>static/messages.js"></script>
+    <title>大连机场商户服务监督平台</title>
+    <style>
+        @keyframes spinner {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .pre-loader {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10000;
+        }
+
+        .pre-loader .spinner {
+            position: relative;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            height: 100%;
+        }
+
+        .pre-loader .spinner::before {
+            content: '';
+            box-sizing: border-box;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 30px;
+            height: 30px;
+            margin-left: -15px;
+            margin-top: -15px;
+            border-radius: 50%;
+            border: 2px solid orange;
+            border-top-color: #f9f9f9;
+            animation: spinner .6s linear infinite;
+        }
+    </style>
+</head>
+<body>
+<noscript>
+    <strong>We're sorry but project doesn't work properly without JavaScript enabled. Please enable it to
+        continue.</strong>
+</noscript>
+<div class="pre-loader" id="preLoader">
+    <div class="spinner"></div>
+</div>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+</html>
